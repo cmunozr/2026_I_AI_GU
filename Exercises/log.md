@@ -1,8 +1,18 @@
 Log
 
-Running nohup on remote server, local development on Windows and experimentation on Colab. Use a Runtime Environment Manager coupled environment variables to distinguish between "Local Windows" and "Remote Ubuntu Server."
+Running nohup on remote server, local development on Windows and experimentation on Colab. 
 
-´´´
+Principles
+
+- Code edition in Colab and locally
+    - Push from Colab to Github "Save a copy in Github"
+    - Pull from Github to Colab by use Open notebook
+    - Pull from Github to local and push to Github from local as always
+- No code edition in server
+
+Use a Runtime Environment Manager coupled environment variables to distinguish between "Local Windows" and "Remote Ubuntu Server."
+
+```python
 import os
 import sys
 import platform
@@ -32,25 +42,29 @@ elif ENV == "REMOTE_LINUX":
 elif "LOCAL_WINDOWS" in ENV:
     DATA_PATH = "C:/Users/Carlos/PhD/data"
     BATCH_SIZE = 16   # Smaller batch for local testing
-´´´
+```
 
 Set a specific environment variable in the Remote Conda Environment. On Ubuntu Server, activate conda env:
 
-´´´
+```bash
 conda activate env_name
-´´´
+```
 
 Set the variable permanent for that env:
 
-´´´
+```bash
 conda env config vars set IS_REMOTE_SERVER=true
-´´´
+```
 
 Restart the env: (Deactivate and reactivate).
 
 Non-Interactive Execution: When running as a script on Ubuntu, I can use nbconvert so no need of manually converting .ipynb to .py:
 
-´´´
+```bash
 nohup jupyter nbconvert --to notebook --execute my_analysis.ipynb --output my_results.ipynb &
-´´´
+```
+
+Potential problems:
+- Diferent Python and Packages version
+- Boring load of the github file to colab, it is not automatic
 
