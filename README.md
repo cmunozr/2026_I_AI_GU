@@ -6,7 +6,19 @@
 
 - Look into how noisy my data is (especially the small biotope patches). 
     - But how exactly?
-- Also, maybe the prohject can be to check out the new spatial data Abigail Starkey [shared](https://business.esa.int/projects/remote-ecological-surveys-eo) from ESA business.
+    - Taking the data that is just in forest is actually a task of cleaning more than creating a feature
+        - Now using biotope dissolved in a tematic way: the synthesis of the data maybe is problematic as they are 
+        - Can be dissolved by contiguity
+        - Can be aggregated all
+        - Lets to compare all of the data and compare how sensible it is
+        - [From this paper](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.839407/full) Alpha diversity is quite difficult to predict, local scale processes that cannot be measure
+        - [From this paper](https://www.sciencedirect.com/science/article/pii/S1574954125003279?via%3Dihub) CNN to work with complete data of the images not aggregation, tutorial in
+        - [From this paper](https://www.researchsquare.com/article/rs-4734879/v1) Use of Swedish lidar data to predict High Conservation Vaues
+     
+    - Resources:
+        - https://www.biodiversity.se/projects-8-1
+        - 
+- Also, maybe the project can be to check out the new spatial data Abigail Starkey [shared](https://business.esa.int/projects/remote-ecological-surveys-eo) from ESA business.
 
 ## Project (Mixing R and python scripts)
 
