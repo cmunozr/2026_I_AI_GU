@@ -32,3 +32,12 @@ My Hmsc models are showing low predictive accuracy on abundance for a bunch of s
         - Could I just reuse the random effects from HMSC? Probably not.
     - For this project I can let the things basic without incorporating random effects:
         - Not between routes just inside each route (biotope)
+
+## Analysis for real project
+
+- what species have low AUC in both algorithms?
+- What happened if I use:
+    - 4 CV spatially selected by blocks no test independent set
+    - Use distributional information as variables
+    - Merge occurrence data to route
+- It suppose that both models behave similarly, difficult to sustain but lets try 
